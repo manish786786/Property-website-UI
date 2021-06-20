@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-75" style="padding-top: 66px;">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Add Property</h3>
+            
+            <label for="email"> Property Name</label>
+            <input type="text" id="email" name="email" placeholder="Xyz">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"> Bath</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+            <label for="city"> Description</label>
+            <!-- <input type="text" id="city" name="city" placeholder="Description"> -->
+            <textarea name="" id="" formControlName="address" cols="65" rows="8"></textarea>
+          </div>
+
+          <div class="col-50" style="margin-top: 51px;">
+            <label for="fname">Carpet Area</label>
+            <input type="text" id="cname" name="cardname" placeholder="Sq Ft, Sq Yd, Sq Mt">
+            <label for="cname">Locality/Area </label>
+            <input type="text" id="cname" name="cardname" placeholder="(Ex : Gota, Sarkhej, Sola)">
+            <label for="ccnum">Price</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="(Ex: 31,51,000/-)">
+            <label for="expmonth">Bedroom</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="1,2,3">
+            <label for="expmonth">Upload</label>
+            <div class="form-group ">
+              <input type="file" class="form-control" onchange="fileChange(event)" multiple>
+          </div>
+          </div>
+          
+        </div>
+        <input type="submit" value="Save" class="btn">
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+.item-container {
+  background: #fff; 
+  margin-top: 20px;
+  padding: 27px;
+  border: 3px solid #dfdfdf;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  border: 2px solid #dfdfdf;
+} 
+
+.page-container{
+  height: 91%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.seprator-left{
+  margin-top: 20px;
+  width: 20%;
+}
+
+.seprator-right{
+  width: 60%;
+}
+
+.seprator-rightest{
+  margin-top: 20px;
+  width: 20%
+}

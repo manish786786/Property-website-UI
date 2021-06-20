@@ -1,0 +1,89 @@
+
+ <div style="margin-left: 10px;margin-top: 10px;">
+  <button type="button" (click)="addProperty()" class="btn btn-success  btn-lg"><i class="fas fa-sign-out-alt" style="margin-right: 7px;"></i>Add Property</button>
+</div>
+<div class="page-container">
+  <div class="seprator-left">
+<div style="border: 2px solid #dfdfdf;">
+<div style="padding: 30px;">
+  <div style="margin-top: 15%;">
+    <span>Search by locality : </span>
+    <input type="text" class="form-control" formControlName="name" placeholder="Enter locality">
+  </div>
+  <div style="margin-top: 15%;">
+    <span>Price Range : </span>
+    <select class="form-control form-control-primary">
+      <!-- <option value="none">None</option> -->
+      <option value="1">1000-2000</option>
+      <option value="2">2000-5000</option>
+      <option value="3">6000-8000</option>
+    </select>
+  </div>
+  <div style="margin-top: 15%;">
+    <span>Bedroom : </span>
+    <select class="form-control form-control-primary">
+      <!-- <option value="none">None</option> -->
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+  </div>
+  <div style="margin-top: 15%;">
+    <span>Added Date : </span>
+    <select class="form-control form-control-primary" >
+      <option value="none">Any</option>
+      <option value="IP">This week</option>
+      <option value="IPR">Last 5 Week</option>
+      <option value="IPV4">Last 15 week</option>
+    </select>
+  </div>
+</div>
+</div>
+</div>
+<div class="seprator-right block-container">
+  <div>
+    <div class="item-container" *ngFor="let data of marker; let i=index">
+      <div class="flex-container">
+        <div class="flex-child">
+          <div class="green"><img width="200" height="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgss8nTPgAGDE-_8TWth_F77xtxII3agtQVQ&usqp=CAU" alt=""></div>
+        </div>
+        <div class="flex-child-right">
+         <h1 class="store-name">{{data.Name}}</h1> 
+         <hr>
+         <h2>Address : {{data.Address}}</h2>
+        </div>
+      </div>
+     <div style="display: flex;">
+      <div>
+       <a> <h2 (click)="details()">| All Details |</h2> </a> 
+      </div>
+      <div>
+       <a href=""> <h2>| View Count : 20 |</h2> </a>
+      </div>
+      <div>
+       <a href=""><h2>|  Add as a Favorite |</h2>  </a> 
+      </div>
+     
+     </div>
+    </div>
+    
+  </div>
+
+</div>
+<div class="seprator-rightest">
+  <div style="border: 2px solid #dfdfdf;">
+    <div style="padding: 30px;">
+    <div>
+      <h1>Recently
+        Viewed
+        Property</h1>
+    </div>
+
+    <div *ngFor="let data of marker; let i=index" style="border: 2px solid #dfdfdf;">
+      <div class="green"><img width="200" height="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgss8nTPgAGDE-_8TWth_F77xtxII3agtQVQ&usqp=CAU" alt=""></div>
+    </div>
+    </div>
+  </div>
+  </div>
+
+</div>
